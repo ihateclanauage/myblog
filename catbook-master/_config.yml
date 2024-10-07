@@ -1,0 +1,49 @@
+
+title: CC的碎碎念 #Your awesome title
+email: hotgingercola@gmail.com #youremail@domain.com
+description: > # this means to ignore newlines until "baseurl"
+ 欢迎来到CC的碎碎念。这是一个个人博客。记录了一位普通技术爱好者的日常生活、学习和思考。
+ 在这个博客上，我将分享我对技术的探索、对知识的学习，以及对商业世界的探索与思考。
+ 如果你有兴趣和我探讨，欢迎在博客中留言，或向我发送邮件。
+
+baseurl: # the subpath of the site
+url: http://starry99.github.io/catbook # the base hostname & protocol for your site
+
+permalink: /:year-:month/:title
+timezone:
+
+favicon: /assets/img/favicon.ico
+
+google_analytics: #UA—XXXXXXXX-X
+disqus_shortname: #disqus shortname
+cusdis:
+    app_id: #your cusdis app_id
+
+user:
+  name: CC的碎碎念
+  pic: /assets/img/cat.jpg
+  picAlt: "catbook"
+  job: 这是一个个人博客
+  aboutme: true # comment this out if you don't need the 'about' page.
+
+exclude:
+  - README.md
+  - LICENSE
+  - github
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      comment: true   
+
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown 
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
